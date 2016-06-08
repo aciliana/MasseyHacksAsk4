@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alicia.masseyhacksdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:debuggable="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Laundry">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNDRY" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Food">
+            <intent-filter>
+                <action android:name="android.intent.action.FOOD" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Ingredients">
+            <intent-filter>
+                <action android:name="android.intent.action.INGREDIENTS" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RecipeChoice">
+            <intent-filter>
+                <action android:name="android.intent.action.RECIPECHOICE" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Stain">
+            <intent-filter>
+                <action android:name="android.intent.action.STAIN" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StainInformation">
+            <intent-filter>
+                <action android:name="android.intent.action.STAININFORMATION" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIVITY_MAPS" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recipe">
+            <intent-filter>
+                <action android:name="android.intent.action.RECIPE" />
+
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

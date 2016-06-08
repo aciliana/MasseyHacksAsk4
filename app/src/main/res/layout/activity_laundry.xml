@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.alicia.masseyhacksdemo.Laundry">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/title"
+        android:text="Laundry"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="30sp"/>
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+            <View android:id="@+id/fakeView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"/>
+            <Button
+                android:id="@+id/bt1"
+                android:background="@drawable/button_boarder"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="85dp"
+                android:text="Wash"
+                android:textColor="@color/purple"/>
+            <Button
+                android:layout_below="@+id/bt1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/spon1"
+                android:background="@drawable/handwash"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/spon2"
+                android:visibility="gone"
+                android:background="@drawable/dont_machine_wash"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/bt1"
+                android:layout_toRightOf="@+id/spon1"
+                android:layout_toEndOf="@+id/spon1"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon3"
+                android:visibility="gone"
+                android:background="@drawable/cold_wash"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/spon1"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:layout_alignLeft="@id/fakeView"
+                android:background="@drawable/cold_washa"
+                android:id="@+id/spon4"
+                android:visibility="gone"
+                android:layout_below="@+id/spon2"
+                android:layout_marginTop="180dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/bt2"
+                android:background="@drawable/button_boarder"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/bt1"
+                android:text="DRY"/>
+            <Button
+                android:layout_below="@+id/bt2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/spon21"
+                android:background="@drawable/dont_tumble"
+                android:visibility="gone"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/spon22"
+                android:visibility="gone"
+                android:background="@drawable/dry_warm"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/bt2"
+                android:layout_toRightOf="@+id/spon21"
+                android:layout_toEndOf="@+id/spon21"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:visibility="gone"
+                android:background="@drawable/dry_med"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon23"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/spon21"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                android:background="@drawable/dry_high"
+                android:layout_alignLeft="@id/fakeView"
+                android:id="@+id/spon24"
+                android:layout_below="@+id/spon22"
+                android:layout_marginTop="180dp"
+                android:layout_weight="1"/>
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/bt3"
+                android:background="@drawable/button_boarder"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:text="Bleach"
+                android:textColor="@color/purple"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/bt2"/>
+            <Button
+                android:layout_below="@+id/bt3"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/dont_tumble"
+                android:visibility="gone"
+                android:id="@+id/spon31"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/spon32"
+                android:visibility="gone"
+                android:layout_alignLeft="@id/fakeView"
+                android:background="@drawable/bleach"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/bt3"
+                android:layout_toRightOf="@+id/spon31"
+                android:layout_toEndOf="@+id/spon31"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon33"
+                android:visibility="gone"
+                android:background="@drawable/no_bleach2"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/spon31"
+                android:layout_marginTop="180dp"/>
+
+
+
+
+            <Button
+                android:id="@+id/bt4"
+                android:background="@drawable/button_boarder"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Iron"
+                android:textColor="@color/purple"
+                android:layout_below="@+id/bt3"/>
+            <Button
+                android:layout_below="@+id/bt4"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:visibility="gone"
+                android:id="@+id/spon41"
+                android:background="@drawable/dont_iron"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:visibility="gone"
+                android:id="@+id/spon42"
+                android:background="@drawable/no_steam"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/bt4"
+                android:layout_toRightOf="@+id/spon41"
+                android:layout_toEndOf="@+id/spon41"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon43"
+                android:background="@drawable/iron_low"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:layout_below="@+id/spon41"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:layout_alignLeft="@id/fakeView"
+                android:id="@+id/spon44"
+                android:visibility="gone"
+                android:background="@drawable/iron_medium"
+                android:layout_below="@+id/spon42"
+                android:layout_marginTop="180dp"
+                android:layout_weight="1"/>
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/bt5"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_boarder"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:text="Dry Cleaning"
+                android:textColor="@color/purple"
+                android:layout_below="@+id/bt4"/>
+            <Button
+                android:layout_below="@+id/bt5"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/spon51"
+                android:visibility="gone"
+                android:background="@drawable/dont_tumble"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/spon52"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/bt5"
+                android:background="@drawable/tumble_dry"
+                android:layout_toRightOf="@+id/spon51"
+                android:layout_toEndOf="@+id/spon51"
+                android:visibility="gone"
+                android:layout_weight="1"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E3E4">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/title"
+        android:text="Select your Ingredients"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/gray"
+        android:textSize="20sp"/>
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+            <View android:id="@+id/fakeView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:id="@+id/spon1"
+                android:layout_margin="5dp"
+                android:textColor="@color/purple"
+                android:background="@drawable/button_boarder"
+                android:text="Chicken"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:text="beef"
+                android:background="@drawable/button_boarder"
+                android:id="@+id/spon2"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@id/fakeView"
+                android:layout_margin="5dp"
+                android:textColor="@color/purple"
+                android:layout_toRightOf="@+id/spon1"
+                android:layout_toEndOf="@+id/spon1"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:text="Pork"
+                android:textColor="@color/purple"
+                android:background="@drawable/button_boarder"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spon3"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/spon1"
+                android:layout_marginTop="180dp"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="5dp"
+                android:text="fish"
+                android:textColor="@color/purple"
+                android:background="@drawable/button_boarder"
+                android:layout_alignLeft="@id/fakeView"
+                android:id="@+id/spon4"
+                android:layout_below="@+id/spon2"
+                android:layout_marginTop="180dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="go"
+                android:layout_below="@+id/spon4"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:background="@color/purple"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

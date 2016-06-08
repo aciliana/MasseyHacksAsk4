@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Ask 4</string>
+    <string name="stain_prompt">Choose a stain</string>
+    <string name="clothing_prompt">Choose your clothing</string>
+    <string name="textile_prompt">Choose your textile</string>
+    <string-array name="stain_arrays">
+        <item>Tomato Sauce</item>
+        <item>Grass</item>
+        <item>Wine</item>
+        <item>Blood</item>
+        <item>Chocolate</item>
+        <item>Coffee</item>
+        <item>Lipstick</item>
+        <item>Mud</item>
+        <item>Grease</item>
+    </string-array>
+    <string-array name="clothing_arrays">
+        <item>Jeans</item>
+        <item>T-Shirt</item>
+        <item>Dress Shirt</item>
+        <item>Shorts</item>
+        <item>Underwear (including Lingerie)</item>
+        <item>Denim</item>
+    </string-array>
+    <string-array name="textile_arrays">
+        <item>Cotton</item>
+        <item>Polyester</item>
+        <item>Cotton/Poly Blend</item>
+        <item>Nylon</item>
+        <item>Silk</item>
+        <item>Spandex</item>
+        <item>Viscose</item>
+
+    </string-array>
+</resources>
